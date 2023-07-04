@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  display: flex; /*сделать контейнер flex-контейнером*/
+  align-items: center; /*выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении*/
+  justify-content: center; /* центрирования элемента через flex*/
+  height: 100vh;
+  overflow: hidden; /*управляет отображением содержания блочного элемента*/
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-wrap: wrap; /*перенос эл на след строку если не помещ в ряд*/
+  max-width: 400px;
+}
+
+.square{
+width: 16px;
+height: 16px;
+background: #1d1d1d;
+margin: 2px;
+box-shadow: 0 0 2px #000;
+transition: 2s ease; /*Устанавливает эффект перехода между двумя состояниями элемента*/
+}
+
+.square:hover{
+transition-duration: 0s; /*определяет продолжительность выполнения анимации*/
+}
